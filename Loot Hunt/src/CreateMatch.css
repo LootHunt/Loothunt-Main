@@ -1,0 +1,118 @@
+.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 20px;
+    width: 25%;
+  }
+  
+  .form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 10px;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  .form__field::placeholder {
+    color: transparent;
+  }
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 25px;
+    left: 10px;
+  }
+  
+  .form__label {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #9b9b9b;
+  }
+  
+  .form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #11998e, #38ef7d);
+    border-image-slice: 1;
+  }
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    top: -10px;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #11998e;
+    font-weight: 700;
+  }
+  
+  /* reset input */
+  .form__field:required, .form__field:invalid {
+    box-shadow: none;
+  }
+
+  .otherSpan{
+    color: whitesmoke;
+    align-self: center;
+    margin-left: 10px;
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+
+.nftSelect{
+    border-style: dotted;
+    border-width: 2px;
+    border-color: #9b9b9b;
+    cursor: pointer;
+    padding: 5px;
+    margin-top: 20px;
+}
+.nftSelect:active{
+    opacity: 0.4;
+    border-color: #11998e;
+
+} 
+
+.cardButtonx{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 25px;
+    text-align: center;
+  }
+  
+  .cardButtonSpanx{
+    background: -webkit-linear-gradient(right,  #d38312, #a83279);
+    background-size: 200px 100px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.1em;
+    font-weight: bold;
+    align-self: center;
+  }
+  
+  
+  .cardButtonx:active {
+    
+    opacity: 0.8;
+  }
+  
+  .cardButtonx:hover{
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.6);
+    transform: scale(1.05);
+  }

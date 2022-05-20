@@ -1,0 +1,100 @@
+img, span{
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+.swapMenuItem{
+  margin: 10px;
+  cursor: pointer;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 30px;
+}
+
+.swapMenuItemSelected{
+  border-style: none;
+  background: -webkit-linear-gradient(left,  #525252, #3d72b4, #525252);
+  background-size: 1600px 200px;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: animationgradienttitle;
+          animation-name: animationgradienttitle;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.swapMenuItemSelected .swapMenuItemSpan{
+  color: whitesmoke;
+}
+
+.swapMenuItemSpan{
+  font-size: 1.3em;
+  color: aliceblue;
+  font-weight: bold;
+}
+
+.title{
+  font-size: 72px;
+  background: #12c2e9;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bolder;
+}
+
+
+
+.cardButton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: whitesmoke;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.cardButtonSpan{
+  background: -webkit-linear-gradient(right,  #d38312, #a83279);
+  background-size: 200px 100px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+
+.cardButton:active {
+  
+  opacity: 0.8;
+}
+
+.cardButton:hover{
+  box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.6);
+  transform: scale(1.05);
+}
+
+@-webkit-keyframes animationgradienttitle {
+  0% {
+      background-position: 0 1600px;
+  }
+  100% {
+      background-position: 1600px 0;
+  }
+}
+
+@keyframes animationgradienttitle {
+  0% {
+      background-position: 0 1600px;
+  }
+  100% {
+      background-position: 1600px 0;
+  }
+}  
